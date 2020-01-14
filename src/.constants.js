@@ -22,5 +22,5 @@ module.exports = Object.freeze({
     port: 80,
     path: '/botNotify'
   },
-  IS_TEAM_DRIVE: false			       
+  IS_TEAM_DRIVE: true			       
 });

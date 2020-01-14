@@ -15,11 +15,12 @@ module.exports = Object.freeze({
   STATUS_UPDATE_INTERVAL_MS: 10000, // A smaller number will update faster, but might cause rate limiting 
   COMMANDS_USE_BOT_NAME: {
 	enabled: false
-  }
+  },
   DOWNLOAD_NOTIFY_TARGET: {  // Information about the web service to notify on download completion.
     enabled: false,   // Set this to true to use the notify functionality
     host: 'hostname.domain',
     port: 80,
     path: '/botNotify'
-  } 
+  },
+  IS_TEAM_DRIVE: false			       
 });

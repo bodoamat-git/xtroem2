@@ -1,5 +1,5 @@
 module.exports = Object.freeze({
-  TOKEN: '970612472:AAFcFihbBIUw5LZRVqj7eRUoRzmg_5Pv-jo',
+  TOKEN: '970612472:AAGdWwY7506tfotfOhR4lDZBidc4vYxu_Ag',
   ARIA_SECRET: 'nadine',
   ARIA_PORT: '',
   ARIA_DOWNLOAD_LOCATION: '/root/content/downloads',

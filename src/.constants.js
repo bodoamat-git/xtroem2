@@ -6,7 +6,7 @@ module.exports = Object.freeze({
   ARIA_DOWNLOAD_LOCATION_ROOT: '/root/content/downloads', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION
   ARIA_FILTERED_DOMAINS: [], // Prevent downloading from URLs containing these substrings
   ARIA_FILTERED_FILENAMES: [], // Files/top level directories with these substrings in the filename won't be downloaded
-  GDRIVE_PARENT_DIR_ID: '1SpWmGLX_oWoN3v7VySKYII1wHv7h_8Kg', //'1GpB718Z4Tht1pigv_HdJPLYAmBZe7k_v', //WEST MOVIES6
+  GDRIVE_PARENT_DIR_ID: '0ACS-QIeUvmqeUk9PVA', //'1GpB718Z4Tht1pigv_HdJPLYAmBZe7k_v', //WEST MOVIES6
   DRIVE_FILE_PRIVATE: {
 	enabled: false
   }

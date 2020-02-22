@@ -568,7 +568,7 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
     console.log(`${gid}: Uploaded `);
     if (fileSize) {
       var fileSizeStr = downloadUtils.formatSize(fileSize);
-      finalMessage = `[TABLE="width: 75%, class: grid, align: center"][TR][TD][CENTER][B][SIZE=4]\n${fileName}[/SIZE][/B]\n\n\n\n\n\n\n\n[IMG]http://bucket.id/assets/images/users/bk00619/c187369c3c814db0ed92beb97c3c9b07.jpg[/IMG][CODE][CENTER]\n\n
+      finalMessage = `[TABLE="width: 75%, class: grid, align: center"][TR][TD][CENTER][B][SIZE=4]\n${fileName}[/SIZE][/B]\n\n\n\n\n\n[CODE][CENTER][B]Direct Link[B]\n\n
 <a href='https://idflteam.gagarugu.workers.dev/${fileName}/'>${fileName}</a> (${fileSizeStr})\n\n[/CENTER][/CODE][/CENTER][/TD][/TR][/TABLE]`;
     } else {
       finalMessage = `[TABLE="width: 75%, class: grid, align: center"]\n\n	  <a href='${url}'>${fileName}</a> [/TABLE]`;

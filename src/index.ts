@@ -570,11 +570,11 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
       var fileSizeStr = downloadUtils.formatSize(fileSize);
       finalMessage = `<a href='${url}'>${fileName}</a> (${fileSizeStr})`;
     } else {
-      finalMessage = `<a href='${url}'>${fileName}</a>`;
+      finalMessage = `[TABLE="width: 75%, class: grid, align: center"]\n\n	  <a href='${url}'>${fileName}</a> [/TABLE]`;
     }
-    //if (constants.IS_TEAM_DRIVE && isFolder) {
-    //  finalMessage += '\n\n<i>Folders in Shared Drives can only be shared with members of the drive. Mirror as an archive if you need public links.</i>';
-    //}
+    if (constants.IS_TEAM_DRIVE && isFolder) {
+      finalMessage += '\n\n<i>Folders in Shared Drives can only be shared with members of the drive. Mirror as an archive if you need public links.</i>';
+    }
     cleanupDownload(gid, finalMessage, url);
   }
 }

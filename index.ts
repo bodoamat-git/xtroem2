@@ -568,12 +568,13 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
     console.log(`${gid}: Uploaded `);
     if (fileSize) {
       var fileSizeStr = downloadUtils.formatSize(fileSize);
-      finalMessage = `<a href='${url}'>${fileName}</a> (${fileSizeStr})`;
+      finalMessage = `[TABLE="width: 75%, class: grid, align: center"][TR][TD][CENTER][B][SIZE=4]\n${fileName}[/SIZE][/B]\n\n\n\n\n[CODE][CENTER]Google Drive Direct Link\n\n
+[URL=https://idflteam.gagarugu.workers.dev/${fileName}/]${fileName} - (${fileSizeStr})[/URL]\n\n[/CENTER][/CODE][/CENTER][/TD][/TR][/TABLE]`;
     } else {
       finalMessage = `[TABLE="width: 75%, class: grid, align: center"]\n\n	  <a href='${url}'>${fileName}</a> [/TABLE]`;
     }
     if (constants.IS_TEAM_DRIVE && isFolder) {
-      finalMessage += '\n\n<i>Folders in Shared Drives can only be shared with members of the drive. Mirror as an archive if you need public links.</i>';
+      finalMessage += '';
     }
     cleanupDownload(gid, finalMessage, url);
   }

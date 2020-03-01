@@ -11,7 +11,7 @@ module.exports = Object.freeze({
 	enabled: false
   }
   SUDO_USERS: [591530116],	// Telegram user IDs. These users can use the bot in any chat.
-  AUTHORIZED_CHATS: [-345870276],	// Telegram chat IDs. Anyone in these chats can use the bot.
+  AUTHORIZED_CHATS: [],	// Telegram chat IDs. Anyone in these chats can use the bot.
   STATUS_UPDATE_INTERVAL_MS: 10000, // A smaller number will update faster, but might cause rate limiting 
   COMMANDS_USE_BOT_NAME: {
 	enabled: false
